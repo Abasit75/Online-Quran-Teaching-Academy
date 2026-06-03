@@ -347,17 +347,17 @@ Quran, Tajweed, Hifz and Islamic Studies to students of all ages.
 
 <h3>Student Registration</h3>
 
-<form>
+<form id="registerForm">
 
-<input type="text" placeholder="Student Name">
+<input type="text" id="studentName" placeholder="Student Name">
 
-<input type="text" placeholder="Parent Name">
+<input type="text" id="parentName" placeholder="Parent Name">
 
 <input type="email" placeholder="Email Address">
 
 <div class="phone-row">
 
-<select>
+<select id="countryCode">
 <option>+92</option>
 <option>+1</option>
 <option>+44</option>
@@ -365,11 +365,11 @@ Quran, Tajweed, Hifz and Islamic Studies to students of all ages.
 <option>+966</option>
 </select>
 
-<input type="text" placeholder="Phone Number">
+<input type="text" id="phone" placeholder="Phone Number">
 
 </div>
 
-<select>
+<select id="course">
 <option>Select Course</option>
 <option>Quran Reading</option>
 <option>Tajweed</option>
@@ -379,7 +379,7 @@ Quran, Tajweed, Hifz and Islamic Studies to students of all ages.
 
 <textarea placeholder="Your Message"></textarea>
 
-<button type="submit">
+<button type="button" onclick="sendToWhatsApp()">
 REGISTER NOW
 </button>
 
@@ -440,6 +440,34 @@ Learn Quran online with certified teachers from anywhere in the world.
 <a href="https://wa.me/923437353621" class="whatsapp-btn">
 💬
 </a>
+<script>
 
+function sendToWhatsApp(){
+
+let student=document.getElementById("studentName").value;
+let parent=document.getElementById("parentName").value;
+let code=document.getElementById("countryCode").value;
+let phone=document.getElementById("phone").value;
+let course=document.getElementById("course").value;
+
+let message =
+`📚 New Student Registration
+
+👦 Student Name: ${student}
+
+👨 Parent Name: ${parent}
+
+📱 Phone: ${code} ${phone}
+
+📖 Course: ${course}`;
+
+let whatsappURL =
+`https://wa.me/923437353621?text=${encodeURIComponent(message)}`;
+
+window.open(whatsappURL,'_blank');
+
+}
+
+</script>
 </body>
 </html>
