@@ -260,3 +260,187 @@ grid-template-columns:1fr;
 }
 
 } 
+.teachers-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+padding:100px 6%;
+background:#032d28;
+color:white;
+}
+
+.teacher-content span{
+color:#d9a548;
+font-weight:600;
+letter-spacing:2px;
+}
+
+.teacher-content h2{
+font-family:'Cinzel',serif;
+font-size:50px;
+margin:20px 0;
+}
+
+.teacher-content p{
+line-height:1.9;
+color:#ddd;
+margin-bottom:25px;
+}
+
+.teacher-content ul{
+list-style:none;
+}
+
+.teacher-content li{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.registration-box{
+background:white;
+padding:40px;
+border-radius:25px;
+color:black;
+}
+
+.registration-box h3{
+text-align:center;
+font-size:30px;
+margin-bottom:25px;
+color:#032d28;
+}
+
+.registration-box input,
+.registration-box select,
+.registration-box textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+.registration-box textarea{
+height:120px;
+resize:none;
+}
+
+.phone-row{
+display:grid;
+grid-template-columns:120px 1fr;
+gap:10px;
+}
+
+.registration-box button{
+width:100%;
+padding:16px;
+background:#d9a548;
+border:none;
+border-radius:10px;
+font-weight:700;
+font-size:17px;
+cursor:pointer;
+}
+
+footer{
+background:#011f1c;
+padding:70px 6% 30px;
+color:white;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
+}
+
+.footer-grid h3{
+color:#d9a548;
+margin-bottom:20px;
+}
+
+.footer-grid p,
+.footer-grid li{
+color:#ccc;
+line-height:2;
+list-style:none;
+}
+
+.copyright{
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;
+color:#aaa;
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+@media(max-width:991px){
+
+.hero{
+flex-direction:column;
+}
+
+.hero-content,
+.hero-image{
+width:100%;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+.menu{
+display:none;
+}
+
+.teachers-section{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:50px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.section-heading h2{
+font-size:32px;
+}
+
+.teacher-content h2{
+font-size:35px;
+}
+
+.phone-row{
+grid-template-columns:1fr;
+}
+
+}
