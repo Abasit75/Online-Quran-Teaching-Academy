@@ -675,3 +675,23 @@ height:250px;
     max-width: 800px;
     margin: auto;
 }
+.social-section{
+    text-align:center;
+    padding:30px;
+}
+
+.social-section h2{
+    margin-bottom:20px;
+}
+
+.social-section a{
+    display:inline-block;
+    margin:10px;
+    font-size:40px;
+    color:#006400;
+    transition:0.3s;
+}
+
+.social-section a:hover{
+    transform:scale(1.2);
+}
