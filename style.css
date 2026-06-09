@@ -738,6 +738,10 @@ height:250px;
     background:#000000;
 }
 .youtube{
-    background:#FF0000;
-    color:white;
+    background: #FF0000 !important;
+    color: #ffffff !important;
+}
+
+.youtube i{
+    color: #ffffff !important;
 }
