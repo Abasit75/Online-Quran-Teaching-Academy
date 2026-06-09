@@ -737,11 +737,7 @@ height:250px;
 .tiktok{
     background:#000000;
 }
-.youtube{
-    background: #FF0000 !important;
-    color: #ffffff !important;
-}
-
-.youtube i{
-    color: #ffffff !important;
+.social-float a.youtube{
+    background-color:#FF0000 !important;
+    color:#fff !important;
 }
